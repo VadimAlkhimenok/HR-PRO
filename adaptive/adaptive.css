@@ -1,0 +1,86 @@
+@media print {
+    /*Стили при предворительном просмотре печати */
+}
+
+@media(orientation:landscape) {
+    /* Стили при ольбомном положении устройства */
+}
+
+/* Бургер */
+
+/* @media (max-width:767px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .header__menu {
+        position: relative;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+    .header__menu.active {
+        top: 0;
+    }
+    .header__burger {
+        display: block;
+        left: 0%;
+        top: 0%;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header__burger span {
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 8.5px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::after,
+    .header__burger::before {
+        content: '';
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::after {
+        bottom: 0;
+    }
+    .header__burger::before {
+        top: 0;
+    }
+    .header__burger.active::before {
+        transform: rotate(45deg);
+        top: 8.5px;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 8.5px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+} */
+
+@media (max-width: 480px){
+    .header__content{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .nav-icon{
+        padding-top: 30px;
+        margin-right: 0px;
+    }
+}
+

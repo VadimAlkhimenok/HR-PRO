@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!-- Язык работы -->
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Автор работы -->
+    <meta name="Author" content="#">
+
+    <!-- Адрес автора -->
+    <meta name="Address" content="#">
+
+    <!-- Авторские права -->
+    <meta name="Copyright" content="#">
+
+    <!-- Короткое описание страницы -->
+    <!-- Описание в content -->
+    <meta name="description" content="#">
+
+    <!-- Переодресация при неполадках -->
+    <!-- Задержака в секундах; url=адрес сайта/страницы -->
+    <meta http-equiv="reftesh" content="1; url=#">
+
+    <!-- Отключает формирование ссылки у номера телефона на IOS -->
+    <meta name="format-detection" content="telephone-no">
+
+    <!-- Ключевые слова/словосочитания для поиска данной страницы -->
+    <meta name="keywords" content="#">
+
+    <!-- Адоптив -->
+    <meta name="viewport" content="width=device-width">
+
+
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Стили адоптива -->
+    <link rel="stylesheet" href="adaptive/adaptive.css">
+
+    <!-- Иконка для страницы -->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/5c6ff8eb8e.js" crossorigin="anonymous"></script>
+
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+
+    <!-- Стили обнуления -->
+    <link rel="stylesheet" href="zeroing/zeroing.css">
+
+    <!-- Нормализация для браузера -->
+    <link rel="stylesheet" href="normalize/normalize.css">
+
+
+
+    <!-- Заголовок страницы -->
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="button">
+            <div class="button__btn">
+                <a href="#top" class="btn__back-to-top btn">
+                    <img src="img/icon/back-to-Top.png" alt="back-to-Top">
+                </a>
+                <a href="tel:375299596665" class="btn__phone btn">
+                    <img src="img/icon/phone.png" alt="phone">
+                </a>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header__conteiner">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <div class="logo">
+                            <img src="img/img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="header__content">
+                        <div class="profile nav-icon">
+                            <a href="#">
+                                <i class="far fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="search nav-icon">
+                            <input class="search__field" id="search__field" type="search" name="search" placeholder="ПОИСК ПО САЙТУ">
+                            <label class="search__label" for="search__field">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </label>
+                        </div>
+                        <div class="header__burger ">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu">
+                            <div class="header__nav nav-header">
+                                <div class="nav-header__box">
+                                    <div class="nav-header__title">
+                                        <p class="nav-header__heading heading">
+                                            О  КОМПАНИИ
+                                        </p>
+                                    </div>
+                                    <ul class="nav-header__list">
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                о компании
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                рекомендации
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                исследования
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                                <div class="nav-header__box">
+                                    <div class="nav-header__title">
+                                        <p class="nav-header__heading heading">
+                                            Соискателям
+                                        </p>
+                                    </div>
+                                    <ul class="nav-header__list">
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                поиск работы
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                поиск работы<br> по напровлению
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                все для вашей<br> карьеры
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                                <div class="nav-header__box">
+                                    <div class="nav-header__title">
+                                        <p class="nav-header__heading heading">
+                                            Работадателям
+                                        </p>
+                                    </div>
+                                    <ul class="nav-header__list">
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                аутсорсинг
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                                консалтинг
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-header__link link">
+                                               подбор персонала
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                            <!-- <ul class="heder__list">
+                                <li>
+                                    <a href="#" class="header__link link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__link link">
+                                        Соискателям
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__link link">
+                                        Работадателям
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top" id="top">
+            <div class="top__conteiner">
+                <div class="top__body">
+                    <div class="top__img img-top">
+                        <img src="img/img/top.png" alt="bacground">
+                        <p class="img-top__heading heading">
+                            ВСЕ НАПРАВЛЕНИЯ
+                        </p>
+                    </div>
+                    <!-- <div class="top__nav nav-top">
+                        <div class="nav-top__box">
+                            <div class="nav-top__title">
+                                <p class="nav-top__heading heading">
+                                    О  КОМПАНИИ
+                                </p>
+                            </div>
+                            <ul class="nav-top__list">
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        о компании
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        рекомендации
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        исследования
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-top__box">
+                            <div class="nav-top__title">
+                                <p class="nav-top__heading heading">
+                                    Соискателям
+                                </p>
+                            </div>
+                            <ul class="nav-top__list">
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        поиск работы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        поиск работы<br> по напровлению
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        все для вашей<br> карьеры
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-top__box">
+                            <div class="nav-top__title">
+                                <p class="nav-top__heading heading">
+                                    Работадателям
+                                </p>
+                            </div>
+                            <ul class="nav-top__list">
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        аутсорсинг
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                        консалтинг
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-top__link link">
+                                       подбор персонала
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__conteiner">
+                <div class="about__body">
+                    <div class="about__top">
+                        <div class="about__subtitle">
+                            <p class="subtitle-about subtitle">
+                                О НАШЕЙ КОМПАНИИ
+                            </p>
+                        </div>
+                        <div class="about__title">
+                            <p class="title-about title">
+                                Мы - компания, которая специализируется на <br>
+процессах управления людьми в вашей <br>
+организации. HRPro - залог успеха вашего <br>
+бизнеса.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <div class="about__row row-about">
+                            <div class="row-about__info">
+                                <div class="row-about__subtitle">
+                                    <p class="subtitle-row-about subtitle">
+                                        КОМПАНИЯ
+                                    </p>
+                                </div>
+                                <div class="row-about__title">
+                                    <p class="title-row-about title">
+                                        Хорошо подобранная
+                                        команда специалистов
+                                    </p>
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        "HRPro"<br>— кадровое агентство полного цикла по подбору и управлению 
+                                        персоналом в Республике Беларусь и за ее пределами.
+                                    </p>
+                                    
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Наша Команда<br>— это опытные и проверенные многочисленными проектами 
+                                        HR-специалисты и рекрутеры.
+                                    </p>
+                                </div>
+                                <div class="row-about__over">
+                                    <a class="over-row-about over" href="#">Подробнее о нас</a>
+                                </div>
+                            </div>
+                            <div class="row-about__img">
+                                <img src="img/img/about-1.png" alt="about-1">
+                            </div>
+                        </div>
+                        <div class="about__row row-about">
+                            <div class="row-about__info">
+                                <div class="row-about__subtitle">
+                                    <p class="subtitle-row-about subtitle">
+                                        ПРИНЦИПЫ
+                                    </p>
+                                </div>
+                                <div class="row-about__title">
+                                    <p class="title-row-about title">
+                                        Наши специальность<br>
+и приоритет
+                                    </p>
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Наша специальность — разработка комплексных проектов и 
+внедрение их в существующую модель бизнеса для его 
+стабильного роста.
+                                    </p>
+                                    
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Наш приоритет — разумная и наиболее выгодная стратегия 
+использования человеческих ресурсов компании нашего 
+партнера, подбор только эффективного персонала для 
+процветания бизнеса клиентов.
+                                    </p>
+                                </div>
+                                <div class="row-about__over">
+                                    <a class="over-row-about over" href="#">Подробнее о нас</a>
+                                </div>
+                            </div>
+                            <div class="row-about__img">
+                                <img src="img/img/about-2.png" alt="about-1">
+                            </div>
+                        </div>
+                        <div class="about__row row-about">
+                            <div class="row-about__info">
+                                <div class="row-about__subtitle">
+                                    <p class="subtitle-row-about subtitle">
+                                        ПОЧЕМУ МЫ?
+                                    </p>
+                                </div>
+                                <div class="row-about__title">
+                                    <p class="title-row-about title">
+                                        Мы лучшие всвоем деле
+                                    </p>
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Экономия времени. Мы решаем все Ваши кадровые вопросы, 
+тогда как Вы продолжаете заниматься бизнесом.
+                                    </p>
+                                    
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Экономия бюджета. Вы платите только за гарантированный 
+результат, при этом увеличивается эффективность предприятия.
+                                    </p>
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Вероятность повторного обращения к нам. Мы профессионально 
+делаем свою работу и дорожим своей репутацией, поэтому многие 
+компании обращаются к нам снова.
+                                    </p>
+                                    
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Рост эффективности кадров. Мы подберём Вам лучших 
+                                        квалифицированных сотрудников, намного увеличив прибыль.                                        
+                                    </p>
+                                </div>
+                                <div class="row-about__over">
+                                    <a class="over-row-about over" href="#">Подробнее о нас</a>
+                                </div>
+                            </div>
+                            <div class="row-about__img">
+                                <img src="img/img/about-3.png" alt="about-1">
+                            </div>
+                        </div>
+                        <div class="about__row row-about">
+                            <div class="row-about__info">
+                                <div class="row-about__subtitle">
+                                    <p class="subtitle-row-about subtitle">
+                                        РЕАЛИЗОВАННЫЕ ПРОЕКТЫ                                   
+                                    </p>
+                                </div>
+                                <div class="row-about__title">
+                                    <p class="title-row-about title">
+                                        О наших проектах
+                                    </p>
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Наша специальность — разработка комплексных проектов и 
+внедрение их в существующую модель бизнеса для его 
+стабильного роста.
+                                    </p>
+                                    
+                                </div>
+                                <div class="row-about__text">
+                                    <p class="text-row-about text">
+                                        Наш приоритет — разумная и наиболее выгодная стратегия 
+                                        использования человеческих ресурсов компании нашего 
+                                        партнера, подбор только эффективного персонала для 
+                                        процветания бизнеса клиентов.
+                                    </p>
+                                </div>
+                                <div class="row-about__over">
+                                    <a class="over-row-about over" href="#">Подробнее о нас</a>
+                                </div>
+                            </div>
+                            <div class="row-about__img">
+                                <img src="img/img/about-4.png" alt="about-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews__conteiner">
+                <div class="reviews__body">
+                    <div class="reviews__subtitle">
+                        <p class="subtitle-reviews subtitle">
+                            ОТЗЫВЫ КЛИЕНТОВ
+                        </p>
+                    </div>
+                    <div class="reviews__img">
+                        <img src="img/img/reviews.png" alt="reviews">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="priсe">
+            <div class="price__conteiner">
+                <div class="price__body">
+                    <div class="price__box">
+                        <div class="price__title">
+                            <p class="title-price title">
+                                Узнать ориентировочную стоимость услуги
+                            </p>
+                        </div>
+                        <div class="price__button">
+                            <a href="#" class="button-price title">
+                                Цена
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news__conteiner">
+                <div class="news__body">
+                    <div class="news__top">
+                        <div class="news__subtitle">
+                            <p class="subtitle-news subtitle">
+                                НОВОСТИ
+                            </p>
+                        </div>
+                        <div class="news__title">
+                            <p class="title-news title">
+                                Новости, которые будут полезны как<br>
+соискателям, так и работодателям
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news__content">
+                        <div class="news__column">
+                            <div class="news__row">
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-1.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-2.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-3.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-4.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__row">
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-5.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-6.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news__box box-news">
+                                    <div class="box-news__img">
+                                        <img src="img/img/news-7.png" alt="">
+                                    </div>
+                                    <div class="box-news__description">
+                                        <div class="box-news__subtitle">
+                                            <p class="subtitle-box-news box-subtitle">
+                                                СОБЕСЕДОВАНИЯ
+                                            </p>
+                                        </div>
+                                        <div class="box-news__title">
+                                            <p class="title-box-news box-title">
+                                                Первое собеседование
+                                            </p>
+                                        </div>
+                                        <div class="box-news__text">
+                                            <p class="text-box-news box-text">
+                                                Что надо и не надо делать на собеседовании, какие неудобные 
+    ситуации иногда случаются с работодателями и соискателями — 
+    обо всём этом мы и расскажем. 
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download">
+            <div class="dowload__conteiner">
+                <div class="dowload__body">
+                    <div class="dowload__button">
+                        <a href="#" class="button-dowload subtitle">
+                            Загрузить новости
+                        </a>
+                    </div>
+                    <div class="dowload__bacground">
+                        <div class="dowload__content">
+                            <div class="dowload__img">
+                                <img src="img/img/dowload.png" alt="dowload">
+                            </div>
+                            <div class="dowload__description description-dowload">
+                                <div class="description-dowload__title">
+                                    <p class="title-description-dowload title">
+                                        Подпишись на
+    наши новости
+                                    </p>
+                                </div>
+                                <div class="description-dowload__subtitle">
+                                    <p class="subtitle-description-dowload subtitle">
+                                        НА ТЕМУ ПРОВЕДЕНИЯ УДАЧНЫХ 
+    СОБЕСЕДОВАНИЙ, КАК СТРОИТЬ КАРЬЕРУ 
+    ПРАВИЛЬНО И МНОГОЕ ДРУГОЕ.
+                                    </p>
+                                </div>
+                                <div class="description-dowload__button">
+                                    <a href="#" class="button-description-dowload box-subtitle">
+                                        ПОДПИСЫВАЙСЯ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__conteiner">
+                <div class="footer__body">
+                    <div class="footer__column column-footer">
+                        <div class="column-footer__text">
+                            <p class="text-column-footer mess-text">
+                                HRPro - единственное кадровое агентство полного цикла 
+в Минске и в Беларуси. Это профессиональная команда 
+из 30 человек разного профиля: HR-менеджеры, безнес-
+тренеры, психологи, маркетологи юристы.
+                            </p>
+                        </div>
+                        <div class="column-footer__text">
+                            <p class="text-column-footer mess-text">
+                                ©  HRPro
+                            </p>
+                        </div>
+                        <div class="column-footer__text">
+                            <p class="text-column-footer mess-text">
+                                FAQ
+                            </p>
+                            <p class="text-column-footer mess-text">
+                                Политика конфиденциальности
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__column column-footer">
+                        <div class="column-footer__title">
+                            <p class="title-column-footer mess-title">
+                                СВЯЗАТЬСЯ С НАМИ
+                            </p>
+                        </div>
+                        <a href="mailto:info@hr-manager.by" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >info@hr-manager.by</p>
+                            </div>
+                        </a>
+                        <a href="tel:375299596665" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >+375 (29) 959-66-65</p>
+                            </div>
+                        </a>
+                        <a href="tel:375299596665" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fab fa-viber"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >+375 (29) 959-66-65</p>
+                            </div>
+                        </a>
+                        <a href="tel:375299596665" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fab fa-telegram-plane"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >+375 (29) 959-66-65</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer__column column-footer">
+                        <div class="column-footer__title">
+                            <p class="title-column-footer mess-title">
+                                РАСПОЛОЖЕНИЕ
+                            </p>
+                        </div>             
+                            <div class="column-footer__link-text">
+                                <p class="mess" >г. Минск, пр-т Рокоссовского,
+                                    оф. 20, этаж 2</p>
+                            </div>
+                        <div class="column-footer__title">
+                            <p class="title-column-footer mess-title">
+                                КАРТЫ ГУГЛ
+                            </p>
+                        </div>
+                        <a href="mailto:info@hr-manager.by" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >открыть в Gmaps</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer__column column-footer">
+                        <div class="column-footer__title">
+                            <p class="title-column-footer mess-title">
+                                СОЦИАЛЬНЫЕ СЕТИ
+                            </p>
+                        </div>
+                        <a href="#" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >hrpro</p>
+                            </div>
+                        </a>
+                        <a href="tel:375299596665" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >facebook.com/hrpro</p>
+                            </div>
+                        </a>
+                        <a href="tel:375299596665" class="column-footer__link">
+                            <div class="column-footer__link-icon mess">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="column-footer__link-text">
+                                <p class="mess" >hrpro</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Java script -->
+    <script src="js/script.js" defer></script>
+
+</body>
+
+
+</html>
