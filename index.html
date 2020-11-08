@@ -7,8 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <!-- Автор работы -->
     <meta name="Author" content="#">
 
@@ -35,8 +33,6 @@
     <!-- Адоптив -->
     <meta name="viewport" content="width=device-width">
 
-
-
     <!-- Стили -->
     <link rel="stylesheet" href="style/style.css">
 
@@ -58,26 +54,20 @@
     <!-- Нормализация для браузера -->
     <link rel="stylesheet" href="normalize/normalize.css">
 
-
+    <!-- Анимация прокрутки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Заголовок страницы -->
-    <title>Document</title>
+    <title>HRPro</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script>new WOW().init();</script>
 
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="button">
-            <div class="button__btn">
-                <a href="#top" class="btn__back-to-top btn">
-                    <img src="img/icon/back-to-Top.png" alt="back-to-Top">
-                </a>
-                <a href="tel:375299596665" class="btn__phone btn">
-                    <img src="img/icon/phone.png" alt="phone">
-                </a>
-            </div>
-        </div>
-        <div class="header">
+        <div class="header wow animate__fadeIn" data-wow-duration="1s">
             <div class="header__conteiner">
                 <div class="header__body">
                     <div class="header__logo">
@@ -88,6 +78,12 @@
                     <div class="header__content">
                         <div class="profile nav-icon">
                             <a href="#">
+                                <!-- <svg 
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="32px" height="36px">
+                                    <image  x="0px" y="0px" width="32px" height="36px"  xlink:href="data:img/png;base64,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" />
+                                </svg> -->
                                 <i class="far fa-user"></i>
                             </a>
                         </div>
@@ -95,7 +91,14 @@
                             <input class="search__field" id="search__field" type="search" name="search" placeholder="ПОИСК ПО САЙТУ">
                             <label class="search__label" for="search__field">
                                 <a href="#">
-                                    <i class="fas fa-search"></i>
+                                    <span></span>
+                                    <!-- <i class="fas fa-search"></i> -->
+                                    <!-- <svg 
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="36px" height="36px">
+                                        <image  x="0px" y="0px" width="36px" height="36px"  xlink:href="data:img/png;base64,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" />
+                                    </svg> -->
                                 </a>
                             </label>
                         </div>
@@ -103,7 +106,7 @@
                             <span></span>
                         </div>
                         <nav class="header__menu">
-                            <div class="header__nav nav-header">
+                            <!-- <div class="header__nav nav-header">
                                 <div class="nav-header__box">
                                     <div class="nav-header__title">
                                         <p class="nav-header__heading heading">
@@ -179,8 +182,8 @@
                                     </ul>
                                 </div>
         
-                            </div>
-                            <!-- <ul class="heder__list">
+                            </div> -->
+                            <ul class="heder__list">
                                 <li>
                                     <a href="#" class="header__link link">
                                         О компании
@@ -196,22 +199,24 @@
                                         Работадателям
                                     </a>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="top" id="top">
+        <div class="top wow animate__fadeIn" data-wow-duration="1s" id="top">
             <div class="top__conteiner">
                 <div class="top__body">
                     <div class="top__img img-top">
-                        <img src="img/img/top.png" alt="bacground">
-                        <p class="img-top__heading heading">
-                            ВСЕ НАПРАВЛЕНИЯ
-                        </p>
+                        <div class="img-top-box">
+                            <img src="img/img/top.png" alt="bacground">
+                            <p class="img-top__heading heading">
+                                ВСЕ НАПРАВЛЕНИЯ
+                            </p>
+                        </div>
                     </div>
-                    <!-- <div class="top__nav nav-top">
+                    <div class="top__nav nav-top">
                         <div class="nav-top__box">
                             <div class="nav-top__title">
                                 <p class="nav-top__heading heading">
@@ -287,14 +292,14 @@
                             </ul>
                         </div>
 
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
         <div class="about">
             <div class="about__conteiner">
                 <div class="about__body">
-                    <div class="about__top">
+                    <div class="about__top wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="about__subtitle">
                             <p class="subtitle-about subtitle">
                                 О НАШЕЙ КОМПАНИИ
@@ -310,7 +315,7 @@
                         </div>
                     </div>
                     <div class="about__content">
-                        <div class="about__row row-about">
+                        <div class="about__row row-about shadow wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="row-about__info">
                                 <div class="row-about__subtitle">
                                     <p class="subtitle-row-about subtitle">
@@ -344,7 +349,7 @@
                                 <img src="img/img/about-1.png" alt="about-1">
                             </div>
                         </div>
-                        <div class="about__row row-about">
+                        <div class="about__row row-about shadow wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="row-about__info">
                                 <div class="row-about__subtitle">
                                     <p class="subtitle-row-about subtitle">
@@ -381,7 +386,7 @@
                                 <img src="img/img/about-2.png" alt="about-1">
                             </div>
                         </div>
-                        <div class="about__row row-about">
+                        <div class="about__row row-about shadow wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="row-about__info">
                                 <div class="row-about__subtitle">
                                     <p class="subtitle-row-about subtitle">
@@ -428,7 +433,7 @@
                                 <img src="img/img/about-3.png" alt="about-1">
                             </div>
                         </div>
-                        <div class="about__row row-about">
+                        <div class="about__row row-about shadow wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="row-about__info">
                                 <div class="row-about__subtitle">
                                     <p class="subtitle-row-about subtitle">
@@ -468,21 +473,24 @@
                 </div>
             </div>
         </div>
-        <div class="reviews">
+        <div class="reviews wow animate__fadeInUp" data-wow-duration="1s">
             <div class="reviews__conteiner">
                 <div class="reviews__body">
-                    <div class="reviews__subtitle">
+                    <!-- <div class="reviews__subtitle">
                         <p class="subtitle-reviews subtitle">
                             ОТЗЫВЫ КЛИЕНТОВ
                         </p>
-                    </div>
+                    </div> -->
                     <div class="reviews__img">
                         <img src="img/img/reviews.png" alt="reviews">
+                        <!-- <p class="subtitle-reviews subtitle">
+                            ОТЗЫВЫ КЛИЕНТОВ
+                        </p> -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="priсe">
+        <div class="priсe wow animate__fadeInUp" data-wow-duration="1s">
             <div class="price__conteiner">
                 <div class="price__body">
                     <div class="price__box">
@@ -503,7 +511,7 @@
         <div class="news">
             <div class="news__conteiner">
                 <div class="news__body">
-                    <div class="news__top">
+                    <div class="news__top wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="news__subtitle">
                             <p class="subtitle-news subtitle">
                                 НОВОСТИ
@@ -516,10 +524,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="news__content">
+                    <div class="news__content wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="news__column">
                             <div class="news__row">
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="2s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-1.png" alt="">
                                     </div>
@@ -543,7 +551,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="3s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-2.png" alt="">
                                     </div>
@@ -567,7 +575,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="4s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-3.png" alt="">
                                     </div>
@@ -591,7 +599,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="5s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-4.png" alt="">
                                     </div>
@@ -617,7 +625,7 @@
                                 </div>
                             </div>
                             <div class="news__row">
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="6s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-5.png" alt="">
                                     </div>
@@ -641,7 +649,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="7s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-6.png" alt="">
                                     </div>
@@ -665,7 +673,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news__box box-news">
+                                <div class="news__box box-news shadow wow animate__fadeIn" data-wow-duration="8s">
                                     <div class="box-news__img">
                                         <img src="img/img/news-7.png" alt="">
                                     </div>
@@ -695,7 +703,17 @@
                 </div>
             </div>
         </div>
-        <div class="download">
+        <div class="download wow animate__fadeInUp" data-wow-duration="1s">
+            <div class="button">
+                <div class="button__btn">
+                    <a href="#top" class="btn__back-to-top btn">
+                        <img src="img/icon/back-to-Top.png" alt="back-to-Top">
+                    </a>
+                    <a href="tel:375299596665" class="btn__phone btn">
+                        <img src="img/icon/phone.png" alt="phone">
+                    </a>
+                </div>
+            </div>
             <div class="dowload__conteiner">
                 <div class="dowload__body">
                     <div class="dowload__button">
@@ -733,7 +751,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer wow animate__fadeInUp" data-wow-duration="1s">
             <div class="footer__conteiner">
                 <div class="footer__body">
                     <div class="footer__column column-footer">
@@ -860,8 +878,11 @@
     </div>
 
     <!-- Java script -->
-    <script src="js/script.js" defer></script>
-
+    <script src="js/script.js"></script>
+    <!-- <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script> -->
 </body>
 
 

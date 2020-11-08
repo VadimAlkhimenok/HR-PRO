@@ -1,6 +1,5 @@
 .wrapper{
     background-color: #f4f4f4;
-    position: relative;
 }
 
 .title{
@@ -103,7 +102,7 @@
 }
 
 .box-title{
-    font-size: 20px;
+    font-size: 22px; //+2 px от макета
     font-family: Times New Roman;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -111,7 +110,7 @@
 }
 
 .box-subtitle{
-    font-size: 11px;
+    font-size: 13px;//+2 px от макета
     font-family: Times New Roman;
     font-weight: 400;
     color: #808080;
@@ -120,7 +119,7 @@
 }
 
 .box-text{
-    font-size: 12px;
+    font-size: 14px;//+2 px от макета
     font-family: Times New Roman;
     font-weight: 400;
     color: #6d6d6d;
@@ -162,17 +161,18 @@ body.lock {
     overflow: hidden;
 }
 .header__menu {
-    position: relative;
+    // position: relative;
     position: fixed;
-    bottom: -5%;
+    top: 0%;
     left: 100%;
-    width: 100%;
-    height: 90%;
-    // background-color: #f7f7f7;
-    // box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
-    transition: all 0.3s ease 0s;
+    width: 30%;
+    height: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+    // transition: all 0.3s ease 0s;
     overflow: auto;
     z-index: 2;
+    transition: all 0.3s;
 }
 .header__menu.active {
     left: 70%;
@@ -309,6 +309,67 @@ body.lock {
         }
     }
 }
+/////////////////////////////////////////////////
+.search__label{
+            // width: 36px;
+            // height: 36px;
+            // background-color: red;
+            // position: relative;
+
+    a{
+        span{
+            width: 36px;
+            height: 36px;
+            position: relative;
+            display: block;
+            &:hover::before{
+                @media (min-width: 767px){
+                        border: 3px solid #a0b458;
+                }
+            }
+            &:active::before{   
+                @media (min-width: 767px){
+                        border: 3px solid #374818;
+                }
+            }
+            &:hover::after{
+                @media (min-width: 767px){
+                        background-color: #a0b458;
+                }
+            }
+            &:active::after{   
+                @media (min-width: 767px){
+                        background-color:  #374818;
+                }
+            }
+            &::before{
+                content: '';
+                top: 0;
+                left:45%;
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                border: 3px solid #000;
+                border-radius: 100%;
+                margin-right: -20px;
+                transition: all 0.3s;
+            }
+            &::after{
+                content: '';
+                top: 75%;
+                left: 25%;
+                position: absolute;
+                width: 15px;
+                height: 3px;
+                background-color: #000;
+                transform: rotate(-45deg);
+                margin-right: -20px;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////
 .search {
     display: flex;
     align-items: center;
@@ -332,68 +393,17 @@ body.lock {
     letter-spacing: 0.5px;
 }
 
-// .heder__list {
-//     height: 70%;
-//     margin:auto 0;
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: space-around;
-//     flex-direction: column;
-//     padding: 50px 20px 50px 20px;
-// }
-
-.nav-header {
-    text-align: end;
-    width: 30%;
-    margin-right: 7%;
-    background-color: #f4f4f4;
-    height: 100%;
-    padding-right: 140px;
-}
-
-.nav-header__box {
-    margin-right: -7px;
-    margin-bottom: 50px;
-    @media (min-width: 767px){
-        &:hover .nav-header__title .nav-header__heading{
-            color: #374818;
-            // font-size: 20px;
-            font-weight: 800;
-            // border-bottom: 2px solid #374818;
-            letter-spacing: 5px;
-        }
-        &:hover .nav-header__title .nav-header__heading::before{
-            opacity: 1;
-            visibility: visible;
-            
-        }
-    }
+.heder__list {
+    height: 70%;
+    margin:auto 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px 20px 50px 20px;
 }
 
 
-.nav-header__heading {
-    display: inline-block;
-    margin-bottom: 20px;
-    transition: all 0.3s;
-    position: relative;
-    &::before{
-        content: '';
-        opacity: 0;
-        visibility: hidden;
-        width: 100%;
-        height: 3px;
-        background-color: #a0b458;
-        position: absolute;
-        left: -3%;
-        bottom: -10px;
-        transition: all 0.3s;
-    }
-}
-.nav-header__list {
-    li{
-        margin: 15px 0px;
-    }
-}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -408,11 +418,14 @@ body.lock {
 }
 .top__body {
     display: flex;
+    justify-content: space-between;
 }
 
 .img-top {
-    width: 75%;
+    // width: 75%;
     position: relative;
+    // background-color: red;
+    height: 100%;
     // &:hover .img-top__heading{
     //     color: #374818;
     //     // font-size: 20px;
@@ -425,12 +438,22 @@ body.lock {
     //     visibility: visible;        
     // }
 }
+
+.img-top-box{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    height: 100%;
+     position: relative;
+}
+
+
 .img-top__heading {
     position: absolute;
     transform: rotate(90deg);
     top: 100%;
     margin-top: -60px;
-    right: 16%;
+    right: -7%;
     // display: inline-block;
     // margin-bottom: 20px;
     // transition: all 0.3s;
@@ -449,15 +472,70 @@ body.lock {
     // }
 }
 .top__img {
+    max-width: 65%;
     img{
         max-width: 100%;
     }
 }
 
 
+.nav-top {
+    text-align: end;
+    width: 35%;
+    // margin-right: 7%;
+    // background-color: #f4f4f4;
+    // height: 100%;
+    // padding-right: 140px;
+}
+
+.nav-top__box {
+    margin-right: -7px;
+    margin-bottom: 50px;
+    @media (min-width: 767px){
+        &:hover .nav-top__title .nav-top__heading{
+            color: #374818;
+            // font-size: 20px;
+            font-weight: 800;
+            // border-bottom: 2px solid #374818;
+            letter-spacing: 5px;
+        }
+        &:hover .nav-top__title .nav-top__heading::before{
+            opacity: 1;
+            visibility: visible;
+            
+        }
+    }
+}
+
+
+.nav-top__heading {
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    position: relative;
+    &::before{
+        content: '';
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 3px;
+        background-color: #a0b458;
+        position: absolute;
+        left: -3%;
+        bottom: -10px;
+        transition: all 0.3s;
+    }
+}
+.nav-top__list {
+    li{
+        margin: 15px 0px;
+    }
+}
+
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
+  
 .about__conteiner {
     max-width: 1800px;
     padding: 170px 15px 0px 15px;
@@ -494,6 +572,10 @@ body.lock {
         }
 
     }
+}
+
+.title-about{
+    letter-spacing: 0;
 }
 
 .about__row {
@@ -569,7 +651,23 @@ body.lock {
     padding: 20px 15px 160px 15px;
     margin: 0 auto;
 }
+.reviews__body{
 
+    position: relative;
+    @media (min-width: 767px){
+        &::before{
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 650px;
+            background-color: #374818;
+            top:-150px;
+            left: 50%;
+            margin-left: -1.5px;
+            z-index: 2;
+        }
+    }
+}
 .reviews__subtitle {
     text-align: center;
     margin-bottom: 180px;
@@ -590,6 +688,8 @@ body.lock {
 }
 
 .reviews__img {
+    margin-top: 180px;
+
     position: relative;
     &::before{
         content: '';
@@ -604,19 +704,19 @@ body.lock {
     }
     &::after{
         content: 'ОТЗЫВЫ КЛИЕНТОВ';
-        font-size: 36px;
         z-index: 3;
-        color: #374818;
         left: 50%;
-        top: 0%;
-        margin-left: -175px;
+        top: -200px;
+        margin-left: -120px;
         position: absolute;
+        // opacity: 0;
+        // visibility: hidden;
+        transition: all 0.3s;
+        font-size: 24px;
         text-transform: uppercase;
         font-family: Times New Roman;
         font-weight: 400;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s;
+        color: #374818;
     }
     img{
         max-width: 100%;
@@ -627,6 +727,13 @@ body.lock {
             opacity: 0.65;
         }
         &:hover::after{
+            margin-left: -175px;
+            text-transform: uppercase;
+            font-family: Times New Roman;
+            font-weight: 400;
+            font-size: 36px;
+            z-index: 3;
+            color: #374818;
             left: 50%;
             top: 50%;
             opacity: 1;
@@ -648,9 +755,10 @@ body.lock {
 .price__body {
     background-color: #eef4d8;
     border-radius: 40px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .price__box {
-    padding: 75px 30px 75px 50px;
+    padding: 40px 30px 40px 50px; //- 35px сверху и снизу от макета
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -733,9 +841,13 @@ body.lock {
     }
 }
 
+.title-news{
+    letter-spacing: 0;
+}
+
 .news__row {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     margin:0px 0px 150px 0px;
 }
 
@@ -911,8 +1023,10 @@ body.lock {
     transition: all 0.3s;
 }
 
+
 .button__btn {
-    padding: 30px 60px 30px 120px;
+    z-index: 10;
+    padding: 10px 60px 10px 30px;
     // background-color: red;
     position: fixed;
     right: -130px;
@@ -922,11 +1036,14 @@ body.lock {
     justify-content: center;
     flex-direction: column;
     transition: all 0.3s;
-    &:hover{
-        right: 0;
+    @media (min-width: 767px){
+        &:hover{
+            right: 0;
+        }
     }
 }
 .btn {
+    width: 80%; //-20% от макета
     padding: 10px;
     opacity: 0.37;
     transition: all 0.3s;
